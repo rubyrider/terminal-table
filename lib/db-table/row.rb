@@ -1,4 +1,4 @@
-module Terminal
+module DB
   class Table
     class Row
 
