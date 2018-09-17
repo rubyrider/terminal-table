@@ -20,13 +20,3 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #++
-
-%w(cell row separator style table table_helper version).each do |file|
-  require "db-table/#{file}"
-end
-
-if Object.constants.include?(:Terminal) && Terminal.class == Module
-  puts "A terminal module is found, removing ....."
-
-  Object.send(:remove_const, :Terminal)
-end
