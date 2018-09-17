@@ -1,4 +1,4 @@
-require 'terminal-table'
+require 'db-table'
 require 'term/ansicolor'
 
 class String
